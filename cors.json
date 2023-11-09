@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://ac7bdfa444ec4dd3b2993b345942f9fd.vfs.cloud9.ap-northeast-1.amazonaws.com"],
+    "method": ["GET", "POST", "PUT", "DELETE", "HEAD"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 3600
+  }
+]
