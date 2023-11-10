@@ -1,0 +1,24 @@
+# netlify.tomlファイルの例
+
+[build]
+  # Netlify上で実行されるビルドコマンド
+  command = "npm run build"
+  # ビルド完了後に公開されるディレクトリを指定
+  publish = "dist"
+  # 使用するNode.jsのバージョンを指定
+  environment = { NODE_VERSION = "14.16.0" }
+
+# 本番環境に特有の設定
+[context.production.environment]
+  # 本番環境の環境変数を指定
+  NODE_ENV = "production"
+
+# デプロイプレビュー環境に特有の設定
+[context.deploy-preview.environment]
+  # デプロイプレビュー環境の環境変数を指定
+  NODE_ENV = "development"
+
+# ブランチデプロイ環境に特有の設定
+[context.branch-deploy.environment]
+  # ブランチデプロイ環境の環境変数を指定
+  NODE_ENV = "development"
