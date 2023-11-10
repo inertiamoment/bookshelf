@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build --force",
     "start-server": "json-server --watch db.json",
     "test": "node tests/test.js",
     "test:unit": "vue-cli-service test:unit",
@@ -15,7 +15,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "daisyui": "^2.45.0",
-    "firebase": "^8.7.1",
+    "firebase": "^8.10.1",
     "vue": "^2.6.11",
     "vue-tabler-icons": "^1.14.0"
   },
